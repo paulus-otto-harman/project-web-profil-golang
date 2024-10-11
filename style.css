@@ -1,4 +1,21 @@
+/* Poppins Regular*/
+@font-face {
+    font-family: "poppins";
+    src:url("asset/font/Poppins-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Poppins Bold*/
+@font-face {
+    font-family: "poppins";
+    src:url("asset/font/Poppins-Bold.ttf") format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
 * {
+    font-family: "poppins", serif;
     padding: 0;
     margin: 0;
 }
@@ -20,11 +37,71 @@ nav ul li a {
 }
 
 main {
-    padding-top: 2em;
+    padding-top: 1.5em;
 }
 
 section {
     scroll-margin-top: 2em;
     width: 100vw;
     height: 100vh;
+}
+
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#wrapper {
+    display: flex;
+    height: 4em;
+    overflow: hidden;
+}
+
+#home h1 {
+    font-size: xxx-large;
+}
+
+div#profesi {
+    display: inline-block;
+    overflow: hidden;
+    align-self: flex-start;
+    margin-left: 0.6em;
+}
+
+#profesi h1 {
+    display: block;
+    animation: gulir_profesi 10s infinite;
+    color: red;
+
+}
+
+@keyframes gulir_profesi {
+    15% {
+        transform: translateY(-1.55em);
+    }
+
+    25% {
+        transform: translateY(-3.05em);
+    }
+
+    40% {
+        transform: translateY(-4.55em);
+    }
+
+    55% {
+        transform: translateY(-6.05em);
+    }
+
+    70% {
+        transform: translateY(-7.55em);
+    }
+
+    85% {
+        transform: translateY(-9.05em);
+    }
+
+    100% {
+        transform: translateY(-9.05em);
+    }
 }
