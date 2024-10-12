@@ -180,7 +180,7 @@ div#profesi {
 }
 
 
-    /* Project or Portfolio */
+/* Project or Portfolio */
 #project .wrapper {
     display: flex;
 }
@@ -226,6 +226,34 @@ div#profesi {
     width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+}
+
+/* Experience */
+#work-history article {
+    display: flex;
+    margin-top: 1em;
+}
+
+#work-history article .period {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 200px;
+}
+
+.from+span {
+    margin: 0 0.1em;
+}
+
+#work-history article .period+div * {
+    margin-bottom: 0.4em;
+}
+
+#work-history .company {
+    color: darkblue;
+}
+
+#work-history p.job-description {
+    text-align: justify;
 }
 
 /* Contact */
@@ -274,7 +302,7 @@ fieldset {
     color: white;
 }
 
-.dark article .link {
+.dark article .link, .dark #work-history .company {
     color: lightgreen;
 }
 
