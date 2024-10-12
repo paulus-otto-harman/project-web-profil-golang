@@ -16,6 +16,7 @@ window.onhashchange = function() {
     switch (location.hash) {
         case '#skill':
             show('loader')
+            skillsContainer.textContent = ''
             loadSkills()
             break;
     }
@@ -27,7 +28,7 @@ function loadSkills() {
         method:'get'
     }).then(async function(response) {
         const { data:skills } = await response.json()
-        skillsContainer.textContent = ''
+
         skills.forEach( ({ skill, level }) => {
             console.log(skill)
             console.log(level)

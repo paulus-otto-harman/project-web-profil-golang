@@ -160,8 +160,7 @@ div#profesi {
 /* Skill */
 #skills {
     display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
+    flex-direction: column;
 }
 
 #skills article {
@@ -171,8 +170,9 @@ div#profesi {
 }
 
 #skills article .progress-bar {
-    height:10px;
-    border-bottom: 20px solid;
+    margin-top: 1em;
+    border: 10px solid;
+    border-radius: 20px;
 }
 
 #skills article .level-4 {
