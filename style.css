@@ -67,11 +67,19 @@ nav ul li a {
     border-radius: 6px;
 }
 
-/* content */
+/* defaults */
+html {
+    scroll-padding-top: 2rem;
+}
+
 section {
     scroll-margin-top: 3.5rem;
     width: 100%;
     height: calc(100vh - 3.5rem);
+}
+
+section h2 {
+    margin: 1em 0;
 }
 
 /* Home */
@@ -144,10 +152,6 @@ div#profesi {
     display: flex;
 }
 
-#about h2 {
-    margin: 1em 0;
-}
-
 #about p {
     margin: 0 0 1em;
 }
@@ -169,6 +173,37 @@ article figure img {
     border: 1px solid;
 }
 
+/* Contact */
+#contact .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact .wrapper div, #contact .wrapper form {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+fieldset {
+    border: none;
+    width: 100%;
+    margin: 1em 0;
+}
+
+#contact form label {
+    display: block;
+    margin-bottom: 0.3em;
+}
+
+#contact form input, #contact form textarea {
+    width: 100%;
+    line-height: 3em;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+}
+
 /* utilities */
 .hidden {
     display: none !important;
@@ -176,4 +211,10 @@ article figure img {
 
 .text-center {
     text-align: center;
+}
+
+/* dark mode */
+.dark * {
+    background-color: #2E3E5C;
+    color: white;
 }
