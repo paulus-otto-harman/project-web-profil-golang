@@ -110,7 +110,6 @@ div#profesi {
     display: block;
     animation: gulir_profesi 10s infinite;
     color: red;
-
 }
 
 @keyframes gulir_profesi {
@@ -164,13 +163,51 @@ div#profesi {
 
 
 /* Project or Portfolio */
-article {
+#project .wrapper {
     display: flex;
 }
 
-article figure img {
-    width: 320px;
+#project .wrapper a {
+    text-decoration: none;
+    color: inherit;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
     border: 1px solid;
+    margin: 1em;
+    border-radius: 10px;
+    height: 420px;
+}
+
+article .link {
+    color: darkgreen;
+    display: flex;
+    align-items: center;
+    margin: 0.5em 0;
+}
+
+article .link svg{
+    height: 1em;
+    width: 1em;
+    margin-left: 0.2em;
+}
+
+article div {
+    padding: 1em;
+}
+
+article figure {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: none;
+}
+
+article figure img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 /* Contact */
@@ -196,7 +233,7 @@ fieldset {
     margin-bottom: 0.3em;
 }
 
-#contact form input, #contact form textarea {
+#contact form input, #contact form textarea, #contact form button {
     width: 100%;
     line-height: 3em;
     border-radius: 10px;
@@ -217,4 +254,12 @@ fieldset {
 .dark * {
     background-color: #2E3E5C;
     color: white;
+}
+
+.dark article .link {
+    color: lightgreen;
+}
+
+.dark #contact form button {
+    background-color: #706FE5;
 }
