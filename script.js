@@ -23,8 +23,8 @@ window.onhashchange = function() {
 }
 
 function loadSkills() {
-    const baseURL = 'https://paulus.free.beeceptor.com'
-    fetch(`${baseURL}/skills`, {
+    const baseURL = 'https://ezdz.xyz'
+    fetch(`${baseURL}/mock-api`, {
         method:'get'
     }).then(async function(response) {
         const { data:skills } = await response.json()

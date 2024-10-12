@@ -175,6 +175,10 @@ div#profesi {
     border-radius: 20px;
 }
 
+#skills article .level-3 {
+    width: 60%;
+}
+
 #skills article .level-4 {
     width: 80%;
 }
