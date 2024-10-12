@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <title>Paulus Harman</title>
@@ -19,9 +19,15 @@
             <li><a href="#contact">Hubungi Saya</a></li>
         </ul>
     </nav>
+
+    <select id="theme-selector">
+        <option value="light">☀️</option>
+        <option value="dark">🌙</option>
+    </select>
 </header>
 
 <main>
+
     <!-- home -->
     <section id="home">
         <div id="wrapper">
@@ -30,7 +36,7 @@
                 <h1>Web Developer</h1>
                 <h1>Mobile Developer</h1>
                 <h1>Software Engineer</h1>
-                <h1>Front-end Developer</h1>
+                <h1>Front-End Developer</h1>
                 <h1>Full Stack Developer</h1>
                 <h1>DevOps</h1>
                 <h1>Web Developer</h1>
@@ -40,32 +46,68 @@
     </section>
 
     <!-- about -->
-    <section id="about">
+    <section id="about" class="hidden">
         <h2>Tentang Saya</h2>
-        <p></p>
-        <figure>
-            <img src="" alt="Foto Profile">
-        </figure>
+        <div class="wrapper">
+            <div>
+
+                <p>
+                    Saya adalah seorang Software Engineer dengan lebih dari 10 tahun pengalaman dalam pengembangan aplikasi dan situs web menggunakan bahasa pemrograman PHP, khususnya framework Laravel.
+                    Dalam perjalanan karir saya, saya telah membantu berbagai perusahaan dan individu membangun solusi digital yang efektif dan skalabel.
+                    Sebagai seorang profesional yang berkomitmen, saya selalu berusaha mengikuti perkembangan teknologi terbaru dan menerapkan praktik terbaik dalam setiap proyek yang saya kerjakan.
+                </p>
+                <p>
+                    Selain bekerja sebagai pengembang, saya juga memiliki ketertarikan besar dalam eksplorasi teknologi baru, mulai dari perangkat mobile hingga konsol game.
+                    Di luar pekerjaan, saya menikmati bermain musik, terutama drum, dan mengisi waktu luang saya dengan menonton film serta mendengarkan musik.
+                    Saya percaya bahwa kreativitas dan semangat belajar adalah kunci untuk terus berkembang dalam dunia teknologi yang dinamis ini.
+                </p>
+            </div>
+            <figure>
+                <img src="asset/images/about-me.jpeg" alt="Foto Profile">
+                <figcaption class="text-center">Banyuwangi, Agustus 2023</figcaption>
+            </figure>
+        </div>
     </section>
 
     <!-- skill -->
-    <section id="skill">
+    <section id="skill" class="hidden">
         <h2>Keahlian</h2>
-        <ul>
-            <li></li>
-        </ul>
+        <ul id="skills"></ul>
     </section>
 
     <!-- project -->
-    <section id="project">
+    <section id="project" class="hidden">
         <h2>Portofolio</h2>
-        <ul>
-            <li></li>
-        </ul>
+        <article>
+            <figure class="thumb">
+                <img src="asset/images/portfolio/starcross.png" alt="screenshot">
+            </figure>
+
+            <div>
+                <h3>Starcross</h3>
+                <p>
+                    Starcross merupakan aplikasi e-commerce untuk sebuah distro di Yogyakarta. Dibangun dengan Laravel dan database server MySQL.
+                </p>
+            </div>
+        </article>
+
+        <article>
+            <figure class="thumb">
+                <img src="asset/images/portfolio/ezdz.png" alt="screenshot">
+            </figure>
+
+            <div>
+                <h3>Personal Website</h3>
+                <p>EZDZ adalah website pribadi yang dibangun dengan menggunakan Laravel, dan dideploy ke Amazon Web Service Lambda (serverless) melalui Laravel Vapor.</p>
+            </div>
+
+        </article>
+
+
     </section>
 
     <!-- experience -->
-    <section id="experience">
+    <section id="experience" class="hidden">
         <h2>Pengalaman</h2>
         <ul>
             <li></li>
@@ -73,16 +115,20 @@
     </section>
 
     <!-- contact -->
-    <section id="contact">
+    <section id="contact" class="hidden">
         <h2>Hubungi Saya</h2>
         <form action="" method="post">
 
         </form>
     </section>
+
+
 </main>
 
 <footer>
-
+    <p class="text-center">
+        &copy; Paulus Harman 2024 - All Rights Reserved
+    </p>
 </footer>
 <script src="script.js"></script>
 </body>

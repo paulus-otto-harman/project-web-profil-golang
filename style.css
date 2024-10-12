@@ -1,4 +1,4 @@
-/* Poppins Regular*/
+/* Poppins Regular */
 @font-face {
     font-family: "poppins";
     src:url("asset/font/Poppins-Regular.ttf") format('truetype');
@@ -6,7 +6,7 @@
     font-style: normal;
 }
 
-/* Poppins Bold*/
+/* Poppins Bold */
 @font-face {
     font-family: "poppins";
     src:url("asset/font/Poppins-Bold.ttf") format('truetype');
@@ -20,8 +20,32 @@
     margin: 0;
 }
 
+body {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+/* header (navigation and menu) */
 header {
-    position: fixed;
+    height: 2rem;
+    position: sticky;
+    top:0;
+    margin-top:0.5rem;
+    margin-bottom: 1rem;
+    text-align: right;
+}
+
+/* footer */
+footer {
+    height: 2rem;
+    position: sticky;
+    bottom: 0;
+}
+
+nav {
+    display: inline-block;
 }
 
 nav ul {
@@ -30,22 +54,27 @@ nav ul {
 
 nav ul li {
     display: inline;
+    margin: 0 0.75em;
 }
 
 nav ul li a {
     text-decoration: none;
 }
 
-main {
-    padding-top: 1.5em;
+#theme-selector {
+    outline: none;
+    padding: 0.3em;
+    border-radius: 6px;
 }
 
+/* content */
 section {
-    scroll-margin-top: 2em;
-    width: 100vw;
-    height: 100vh;
+    scroll-margin-top: 3.5rem;
+    width: 100%;
+    height: calc(100vh - 3.5rem);
 }
 
+/* Home */
 #home {
     display: flex;
     align-items: center;
@@ -104,4 +133,47 @@ div#profesi {
     100% {
         transform: translateY(-9.05em);
     }
+}
+
+/* About */
+#about {
+
+}
+
+#about .wrapper {
+    display: flex;
+}
+
+#about h2 {
+    margin: 1em 0;
+}
+
+#about p {
+    margin: 0 0 1em;
+}
+
+#about img {
+    width: 320px;
+    border-radius: 10px;
+    margin-left: 1em;
+}
+
+
+/* Project or Portfolio */
+article {
+    display: flex;
+}
+
+article figure img {
+    width: 320px;
+    border: 1px solid;
+}
+
+/* utilities */
+.hidden {
+    display: none !important;
+}
+
+.text-center {
+    text-align: center;
 }
